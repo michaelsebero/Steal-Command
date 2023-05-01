@@ -1,0 +1,11 @@
+#!/bin/bash
+COMMAND1="paru -Syu "$@""
+COMMAND2="flatpak install "$@""
+
+if $COMMAND1; then
+    echo
+    :
+elif $COMMAND2; then
+    echo
+    :
+fi
